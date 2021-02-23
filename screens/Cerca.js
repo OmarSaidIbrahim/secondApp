@@ -56,15 +56,16 @@ export default class Cerca extends Component {
                 <Text style={{color: "white", fontWeight: "bold", fontSize: 25, marginVertical: 10}}>I piu cercati</Text>
                 {DATA3.map(data => {
                         return (
-                        <TouchableWithoutFeedback onPress={() => alert(data.title)}>
+                        <TouchableWithoutFeedback onPress={() => alert(data.title)} key={data.title}>
                             <View style={{borderRadius: 4,flexDirection: "row", alignItems:"center", backgroundColor: "#404040", justifyContent:"space-between", borderColor: "black", borderWidth: 2}}>
                                 <Image
                                     style={{width:150 ,height: 70, borderRadius: 4}}
                                     source={{
                                         uri: data.image,
                                     }}
+                                    key={data.image}
                                 />
-                                <Text style={{color: "white", fontWeight: "bold", fontSize: 15}}>{data.title}</Text>
+                                <Text style={{color: "white", fontWeight: "bold", fontSize: 15}} key={data.title}>{data.title}</Text>
                                 <Ionicons name="play" size={30} color="white"/>
                             </View>
                         </TouchableWithoutFeedback>

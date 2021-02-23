@@ -100,9 +100,9 @@ export default class HomeScreen extends Component {
                     <View style={{flexDirection: "row", flexWrap: "wrap"}}>
                     {DATA2.map(data => {
                         return (
-                        <TouchableWithoutFeedback onPress={() => alert(data.genre)}>
-                            <View style={[styles.container2,{backgroundColor: data.color}]}>
-                                <Text style={styles.text4}>{data.genre}</Text>
+                        <TouchableWithoutFeedback onPress={() => alert(data.genre)} key={data.genre}>
+                            <View style={[styles.container2,{backgroundColor: data.color}]} key={data.color}>
+                                <Text style={styles.text4} key={data.genre}>{data.genre}</Text>
                             </View>
                         </TouchableWithoutFeedback>
                         )})
