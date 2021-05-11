@@ -5,4 +5,4 @@ The language used in this app is Italian. This one my first test using React-Nat
 
 PS. the GIF has a low FPS, the app works fluently.
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/OmarSaidIbrahim/Screenshots/blob/main/ezgif.com-gif-maker6.gif)
